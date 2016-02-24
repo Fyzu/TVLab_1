@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://X:/Java/Libs/BigDecimalMath/BigDecimalMath.iml" filepath="X:/Java/Libs/BigDecimalMath/BigDecimalMath.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TVLab_1.iml" filepath="$PROJECT_DIR$/TVLab_1.iml" />
+    </modules>
+  </component>
+</project>

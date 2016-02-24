@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="anc">
+    <CLASSES />
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://X:/Java/Libs/anc" />
+    </SOURCES>
+    <excluded>
+      <root url="file://X:/Java/Libs/anc/org/nevec/rjm" />
+    </excluded>
+  </library>
+</component>

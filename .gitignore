@@ -1,6 +1,1 @@
-.idea/workspace.xml
-.idea/copyright/profiles_settings.xml
-.idea/modules.xml
 *.class
-*.mf
-out/production/BigDecimalMath/Makefile

@@ -57,6 +57,9 @@ public class MathCombinatoricsController {
     @FXML
     private Button calculateButton;
 
+    @FXML
+    private ProgressIndicator progressIndicator;
+
     private Service taskService;
 
     /**
@@ -110,6 +113,8 @@ public class MathCombinatoricsController {
 
         // Создаем службу для расчетов
         taskService = new TaskService();
+
+        progressIndicator.visibleProperty().bind(taskService.runningProperty());
     }
 
     /**
@@ -217,8 +222,9 @@ public class MathCombinatoricsController {
             calculateButton.disableProperty().bind(task.runningProperty());
             resultField.textProperty().bind(task.valueProperty());
             task.stateProperty().addListener((observable, oldState, newState) -> {
-                if(newState == Worker.State.SUCCEEDED)
+                if(newState == Worker.State.SUCCEEDED) {
                     taskService.cancel();
+                }
             });
             return task;
         }
